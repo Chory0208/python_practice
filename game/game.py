@@ -11,6 +11,7 @@ enemy_final_hp = enemy_hp - my_power
 import random
 import time
 
+
 def fight():
     my_hp = 1000
     my_power = random.randint(1, 100)
@@ -28,7 +29,7 @@ def fight():
             print(f'敌人的血量是{enemy_hp}')
             print("==========")
             time.sleep(1)
-            count = count + 1
+            count += 1
         if my_hp <= 0:
             print("你赢了")
             break
